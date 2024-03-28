@@ -1,0 +1,45 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.footer{
+    background-color: v.$primario;
+    padding-top: 5rem;
+    margin-top: 5rem;
+
+    &_grid{
+        @include m.tablet{
+            @include m.grid(3,2rem);
+        }
+    }
+
+    &_heading{
+        font-size: 2rem;
+        color: v.$blanco;
+        text-transform: uppercase;
+
+
+    }
+
+    &_texto{
+        color: v.$blanco;
+    }
+
+    &_navegacion{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &_copy{
+        background-color: darken(v.$primario, 10%);
+        text-align: center;
+        padding: 1rem;
+        margin: 5rem 0 0;
+        color: v.$blanco;
+
+
+    }
+
+
+}

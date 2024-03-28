@@ -1,0 +1,108 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    background-image: linear-gradient(to right, transparentize( v.$primario, .1)0%, transparentize(v.$primario, .1) 100%), url(../img/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0;
+    position: relative;
+
+    @include m.tablet{
+        padding: 3rem 0 20rem 0; 
+        
+    }
+
+    &_barra{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include m.tablet { 
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }
+
+    &_imagen{
+        display: none;
+        @include m.tablet { 
+            display: block;
+            border-bottom-left-radius: 5rem;
+            border-top-left-radius: 2rem;
+            position: absolute;
+            right: 0px;
+            bottom: -50px;
+            max-width: 35rem;
+        }
+        @include m.desktopXL { 
+            max-width: 60rem;
+            
+        }
+    }
+
+    &_logo{
+        width: 25rem;
+        
+    }
+
+    &_contenido{
+        
+        @include m.tablet {
+            margin-top: 10rem;
+            max-width: 50rem; 
+            
+        }
+
+    }
+
+    &_texto{
+        color: v.$blanco;
+        display: none;
+        @include m.tablet { 
+            display: block;
+
+        }
+    }
+
+    &_heading{
+        color: v.$blanco;
+        text-align: center;
+        @include m.tablet{ 
+            text-align: left;
+        }
+
+    }
+}
+
+.navegacion{
+    display: flex;
+    align-items:center ;
+    margin-top: 5rem;
+    flex-direction: column;
+
+    @include m.tablet { 
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 0rem;
+
+    }
+    &_link{
+        color: v.$blanco;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+
+        &:last-of-type{
+            margin-bottom: 0rem;
+        }
+
+        @include m.tablet { 
+            margin-bottom: 0rem;
+            gap: 2rem;
+
+        }
+
+    }
+}
