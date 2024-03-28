@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.repartidor{
+    &_grid{
+        @include m.tablet { 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 4rem;
+          
+        }
+    }
+
+
+    &_contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    &_texto{
+        color: v.$secundario;
+        line-height: 1.5;
+
+
+    }
+        
+
+    &_boton{
+        
+        @include m.boton(v.$primario, v.$blanco);
+        @include m.tablet {
+            width: 45%;
+
+
+        }
+    
+            
+    }
+
+
+}

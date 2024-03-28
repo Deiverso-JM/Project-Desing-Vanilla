@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.alojamientos{
+    padding: 2rem 0;
+    
+    &_Grid{
+        display: grid;
+
+        @include m.tablet { 
+            @include m.grid(2,2rem) ;
+        }
+        
+        @include m.desktop {
+            @include m.grid(4, 2rem);
+
+
+        }
+    }
+
+    
+}
+

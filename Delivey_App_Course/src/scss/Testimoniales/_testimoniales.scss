@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.testimoniales{
+
+    padding: v.$separacion;
+
+    &_heading{
+        text-align: center;
+    }
+
+    &_grid{
+        @include m.tablet { 
+            @include m.grid(5, 1rem);
+    }
+            
+        }
+        
+}

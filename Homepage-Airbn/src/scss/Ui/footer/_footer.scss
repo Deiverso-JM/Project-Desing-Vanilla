@@ -1,0 +1,59 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.footer{
+    background-color: lighten(v.$grisClaro, 7%);
+    border-top: 1px solid lighten(v.$gris, 40%);
+    padding-top: v.$separacion;
+
+
+    &_grid{
+        @include m.grid(2,2rem);
+
+        @include m.desktop { 
+            @include m.grid(4,2rem); 
+            border-bottom: 1px solid lighten(v.$gris, 40%);
+
+        }
+
+       
+    }
+
+    &_enlace{
+        display: block;
+        color: v.$gris;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+
+    }
+
+    &_heading{
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+    &_barra{
+        margin-top: 1rem;
+        padding: 2rem 0rem;
+    }
+
+    &_barramenu{
+        display: flex;
+        gap: 2rem;
+        padding-right: 1rem;
+
+        @include m.telefono { 
+           
+        }
+
+     
+    }
+
+    &_enlace--2{
+
+        &::before{
+            content: "- ";
+        }
+    }
+
+}
