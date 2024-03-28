@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeti</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="header contenedor">
+      <div class="header_logo">
+        <a href="index.html">
+          <img src="build/img/logo.png" alt="Logo de pagina" />
+        </a>
+      </div>
+
+      <nav class="navegacion">
+        <a href="#" class="navegacion_enlace navegacion_enlace--crear">Crear Grupos</a>
+        <a href="#" class="navegacion_enlace">iniciar Sesion</a>
+        <a href="#" class="navegacion_enlace">Registrarse</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1 class="hero_heading">
+        Encuentra o crea un grupo para compartir lo que mas te guste
+      </h1>
+      <a href="" class="hero_enlace">Obtener una cuneta</a>
+    </section>
+
+    <section class="busqueda">
+      <h2 class="busqueda_heading">Busca un grupo en tu ciudad</h2>
+
+      <div class="contenedor">
+        <form class="formulario">
+          <select class="formulario_campo">
+            <option>Programacion</option>
+            <option>Diseño</option>
+            <option>Negocios</option>
+            <option>Moda</option>
+            <option>Ejercicio y Salud</option>
+            <option>Fotografia</option>
+            <option>Comida</option>
+            <option>Diseño Interior</option>
+            <option>Cafe</option>
+            <option>Cine</option>
+            <option>Libros</option>
+            <option>Emprendimiento</option>
+          </select>
+
+          <input
+            class="formulario_campo"
+            type="text"
+            placeholder="Nombre Evento"
+          />
+          <input
+            class="formulario_campo"
+            type="text"
+            placeholder="Ciudad o Pais"
+          />
+          <input class="formulario_sumbit" type="submit" value="Buscar" />
+        </form>
+      </div>
+    </section>
+
+    <main class="eventos contenedor">
+      <h2 class="eventos_heading">Proximos eventos</h2>
+      <div class="eventos_grid">
+        <div class="evento">
+          <a href="meeti.html">
+            <img src="build/img/imagen1.jpg" class="evento_imagen" alt="" />
+            <div class="evento_contenido">
+              <p class="evento_fecha">Jueves 30 de septiembre de 2022</p>
+
+              <h3 class="evento_nombre">Ideas de negocios</h3>
+
+              <div class="evento_autor">
+                <div class="evento_autor-imagen">
+                  <img src="build/img/perfil1.jpg" alt="" />
+                </div>
+                <div class="evento_autor-informacion">
+                  <p class="evento_organizado-texto">Organizado por:</p>
+                  <p class="evento_organizado-nombre">Johan Melo</p>
+                </div>
+              </div>
+            </div>
+            <!-- Evento contenido -->
+          </a>
+        </div>
+        <!-- Evento -->
+        <div class="evento">
+          <a href="meeti.html">
+            <img src="build/img/imagen2.jpg" class="evento_imagen" alt="" />
+            <div class="evento_contenido">
+              <p class="evento_fecha">Lunes 02 de Octubre de 2022</p>
+
+              <h3 class="evento_nombre">Bitcoin y otras Criptos</h3>
+
+              <div class="evento_autor">
+                <div class="evento_autor-imagen">
+                  <img src="build/img/perfil1.jpg" alt="" />
+                </div>
+                <div class="evento_autor-informacion">
+                  <p class="evento_organizado-texto">Organizado por:</p>
+                  <p class="evento_organizado-nombre">Johan Melo</p>
+                </div>
+              </div>
+            </div>
+            <!-- Evento contenido -->
+          </a>
+        </div>
+        <!-- Evento -->
+        <div class="evento">
+          <a href="meeti.html">
+            <img src="build/img/imagen3.jpg" class="evento_imagen" alt="" />
+            <div class="evento_contenido">
+              <p class="evento_fecha">Miercoles 04 de Octubre de 2022</p>
+              <h3 class="evento_nombre">Pizza paso a paso</h3>
+              <div class="evento_autor">
+                <div class="evento_autor-imagen">
+                  <img src="build/img/perfil2.jpg" alt="" />
+                </div>
+                <div class="evento_autor-informacion">
+                  <p class="evento_organizado-texto">Organizado por:</p>
+                  <p class="evento_organizado-nombre">Josue perez</p>
+                </div>
+              </div>
+            </div>
+            <!-- Evento contenido -->
+          </a>
+        </div>
+        <!-- Evento -->
+      </div>
+    </main>
+
+    <section class="categorias">
+      <h2 class="categorias_heading">Categorias</h2>
+      <ul class="categorias_grid contenedor">
+        <li class="categoria">
+          <img src="build/img/categoria_1.jpg" alt="Categoria imagen" />
+          <p class="categoria_nombre">Programacion</p>
+        </li>
+        <li class="categoria">
+          <img src="build/img/categoria_2.jpg" alt="Categoria imagen" />
+          <p class="categoria_nombre">Diseño UX y UI</p>
+        </li>
+        <li class="categoria">
+          <img src="build/img/categoria_3.jpg" alt="Categoria imagen" />
+          <p class="categoria_nombre">Negocios e Ideas</p>
+        </li>
+        <li class="categoria">
+          <img src="build/img/categoria_4.jpg" alt="Categoria imagen" />
+          <p class="categoria_nombre">Ropa y Moda</p>
+        </li>
+        <li class="categoria">
+          <img src="build/img/categoria_5.jpg" alt="Categoria imagen" />
+          <p class="categoria_nombre">Ejercicio y Bienestar</p>
+        </li>
+        <li class="categoria">
+          <img src="build/img/categoria_6.jpg" alt="Categoria imagen" />
+          <p class="categoria_nombre">Fotografía</p>
+        </li>
+        <li class="categoria">
+          <img src="build/img/categoria_7.jpg" alt="Categoria imagen" />
+          <p class="categoria_nombre">Comida</p>
+        </li>
+        <li class="categoria">
+          <img src="build/img/categoria_8.jpg" alt="Categoria imagen" />
+          <p class="categoria_nombre">Diseño Interior</p>
+        </li>
+        <li class="categoria">
+          <img src="build/img/categoria_9.jpg" alt="Categoria imagen" />
+          <p class="categoria_nombre">Café</p>
+        </li>
+        <li class="categoria">
+          <img src="build/img/categoria_10.jpg" alt="Categoria imagen" />
+          <p class="categoria_nombre">Cine</p>
+        </li>
+        <li class="categoria">
+          <img src="build/img/categoria_11.jpg" alt="Categoria imagen" />
+          <p class="categoria_nombre">Libros</p>
+        </li>
+        <li class="categoria">
+          <img src="build/img/categoria_12.jpg" alt="Categoria imagen" />
+          <p class="categoria_nombre">Emprendimiento</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="grupos">
+      <div class="grupos_grid contenedor">
+        <div class="grupos_bloque">
+          <h3 class="grupos_heading">Crea un Grupo</h3>
+          <p class="grupos_texto">
+            Comparte lo que te gusta o tu pasión con los demás, crea tu propio
+            grupo y eventos; hoy mismo sin costos
+          </p>
+        </div>
+        <div class="grupos_bloque">
+          <h3 class="grupos_heading">Únete a un grupo</h3>
+          <p class="grupos_texto">
+            Conoce personas con tus mismos gustos y pasiones, únete a un grupo
+            ya existente y asiste a próximos eventos
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer contenedor">
+        <nav class="navegacion">
+            <a href="#" class="navegacion_enlace navegacion_enlace--crear">Crear Grupos</a>
+            <a href="#" class="navegacion_enlace">iniciar Sesion</a>
+            <a href="#" class="navegacion_enlace">Registrarse</a>
+        </nav>
+        <p class="footer_copy">Todos los derechos reservados. Meeti</p>
+    </footer>
+  </body>
+</html>

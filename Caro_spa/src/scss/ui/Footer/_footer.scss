@@ -1,0 +1,44 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.footer{
+    padding-top: 5rem;
+    &_grid{
+        @include m.tablet{
+            @include m.grid(3,2rem);
+
+            
+        }
+    }
+
+    &_widget{
+        text-align: center;
+
+        &:nth-child(3){
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
+    }
+
+    &_copy{
+
+        text-align: center;
+        max-width: 120rem;
+        margin: 2rem auto 0 auto;
+        color: v.$gris;
+        border-top: 1px solid darken(v.$grisClaro, 10%);
+        font-size: 1.6rem;
+        padding: 2rem
+    }
+
+    &_heading{
+        @include m.heading;
+        font-size: 3.4rem;
+    }
+
+    &_texto{
+        line-height: 1.8;
+    }
+}

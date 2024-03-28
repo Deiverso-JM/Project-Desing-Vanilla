@@ -1,0 +1,24 @@
+"media queary":{
+        "prefix": "mq",
+        "body": [
+            "@media (min-width: $1px){\n\t$2\n}"
+        ]
+    }
+"media queary":{
+        "prefix": "mq",
+        "body": [
+            "@include m.$1{\n\t$2\n}"
+        ]
+    },
+    "importar mixons":{
+        "prefix": "imm",
+        "body": [
+            "@use 'base/mixins' as m;"
+        ]
+    },
+    "importar variables":{
+        "prefix": "imv",
+        "body": [
+            "@use 'base/variables' as v;"
+        ]
+    }

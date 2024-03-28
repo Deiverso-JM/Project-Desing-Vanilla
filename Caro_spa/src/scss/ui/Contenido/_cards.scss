@@ -1,0 +1,58 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.cards{
+
+    &_grid{
+        @include m.tablet{
+            @include m.grid(3,2rem)
+        }
+    }
+}
+
+.card{
+
+    max-width: 35rem;
+    margin: 0 auto 2rem auto;
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+
+    @include m.tablet{
+        max-height: unset;
+        margin: 0;
+    }
+
+
+    &_imagen{
+        width: 100%;
+        border: .5rem solid v.$blanco;
+
+        &:hover{
+            transform: scale(1.3) rotate(4deg);
+            transition-duration: .3s;
+        }
+    }
+    
+
+    &_contenido{
+        max-width: 90%;
+        margin: 0 auto;
+        transform: translateY(-5rem);
+        background-color: v.$blanco;
+        
+    }
+
+    &_heading{
+        @include m.headingCursiva;
+        font-size: 3.4rem;
+        padding: 2rem;
+    }
+
+    &_enlace{
+        @include m.boton(v.$secundario, v.$blanco);
+        display: block;
+    }
+}

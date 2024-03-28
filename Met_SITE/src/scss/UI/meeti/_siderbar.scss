@@ -1,0 +1,25 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.sidebar{
+
+    &_contenido{
+        background-color: v.$secundario;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    &_heading{
+        color: v.$blanco;
+        margin: 0;
+    }
+
+    &_hora,&_ubicacion,&_fecha{
+        color: v.$blanco;
+        font-weight: 700;
+        span{
+            font-weight: 400;
+        }
+    }
+}
